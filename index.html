@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://d396qusza40orc.cloudfront.net/phoenixassets/web-frameworks/index.html -->
+<html lang="en">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+         content must come *after* these tags -->
+    <title>Seekhley</title>
+         <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+<style>
+body {
+    font-family: sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.navbar-header{
+	padding: 30px;
+	background-color: rgba(255, 255, 255, 0.6);
+	height: 80px;
+}
+#bg{
+	 background-image: linear-gradient(rgba(47, 64, 81, 0.6), rgba(0, 0,0,0.6)), url("2.JPG");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 15% right  bottom;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#maintxt{
+	
+	text-align: center;
+        color: white;
+        padding: 30px;
+        
+      font-family: 'Dosis', serif;
+}
+#stats{
+	background-color:rgba(23,50,94,1);
+	height: 90px;
+	text-align: center;
+	color: white;
+	
+}
+#div1, #div2, #div3, #callaction{display: none;}
+</style>
+</head>
+<body>   
+
+<div id="bg">
+  <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header navbar-fixed-top">
+          <span style="font-size:25px; cursor:pointer;  " onclick="openNav()" ><span class="glyphicon glyphicon-align-justify"></span>  MENU</span>
+          <a class="navbar-brand pull-right" href="#">
+               <img alt="Brand" src="logo.png" height="50px" />
+          </a>
+          
+           
+          
+      	  <div id="mySidenav" class="sidenav ">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+              <a href="#">Home</a>
+              <a href="seekh.html">What We Do</a>
+              <a href="#">Gallery</a>
+              <a href="#">Blog</a>
+              <a href="#">News</a>
+              <a href="#">Contact</a>
+          </div>
+         </div>
+      </div>
+  </nav>                
+
+
+<div id="main" class="container">
+<div style="padding:60px;"></div>
+<div id="maintxt">
+  <h1 >Enhancing Education through Application Based Learning</h1>
+  <h2 ><div id="div1">EXPLORE.</div><div id="div2">   EXPERIMENT.</div><div id="div3">   CONCEPTUALISE.</div></h2><br>
+  <input type="button" class="btn btn-success btn-lg" value="Join the experiential learning wagon today!" id="callaction" />
+  </div>
+  <div style="padding: 70px;"></div>
+ </div> 
+ </div>
+   <div id="stats">
+	   <div class="col-md-10 col-md-offset-1">
+		<div class="row">
+			<div class="col-xs-3">
+				<h3><div class="anum">4739</div> STUDENTS</h3>   
+            </div>
+            <div class="col-xs-1">
+				<span class="glyphicon glyphicon-user" style="font-size:4em;top:20px;"></span>
+			</div>
+			<div class="col-xs-3">
+				<h3><div class="anum">25</div> SCHOOLS  </h3> 
+            </div>
+            <div class="col-xs-1">
+				<span class="glyphicon glyphicon-education" style="font-size:4em;top:20px;"></span>
+			</div>
+			<div class="col-xs-3">
+				<h3><div class="anum">103</div> INDUSTRIES  </h3> 
+               </div>
+            <div class="col-xs-1">
+				<span class="glyphicon glyphicon-briefcase" style="font-size:4em; top:20px;"></span>
+			</div>
+		</div>
+	</div>
+</div>
+     
+     
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>  
+   
+
+      <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    //document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+   // document.getElementById("main").style.marginLeft= "0";
+
+    document.body.style.backgroundColor = "white";
+}
+</script>  
+<script>
+$(document).ready(function(){
+   
+        $("#div1").fadeIn(2000);
+        $("#div2").fadeIn(3000);
+        $("#div3").fadeIn(4000);
+        $("#callaction").show();
+        
+    
+});
+</script>
+</body>
+</html>
